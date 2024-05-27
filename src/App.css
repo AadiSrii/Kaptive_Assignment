@@ -1,0 +1,83 @@
+/* General styles */
+html, body, #root, .App {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* Toolbar styles */
+.toolbar-container {
+  margin-bottom: 20px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Button group styles */
+.button-group, .button-group1 {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.button-group1{
+  margin-left: 97%;
+}
+.button-group .MuiButton-root, .button-group1 .MuiButton-root {
+  min-width: 50px;
+  padding: 5px 5px;
+  font-size: 12px;
+}
+
+.normal-view-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.growth-view-btn {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.period-btn {
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.settings-btn {
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .toolbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .button-group, .button-group1 {
+      width: 100%;
+      justify-content: space-between;
+  }
+
+  .button-group .MuiButton-root, .button-group1 .MuiButton-root {
+      flex: 1;
+      text-align: center;
+  }
+
+  .button-group .period-btn, .button-group1 .settings-btn {
+      min-width: 50px;
+      padding: 5px 10px;
+  }
+}
